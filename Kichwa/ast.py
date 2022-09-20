@@ -220,7 +220,7 @@ class If(Expression):
         out: str = f'ari {str(self.condition)} {str(self.consequence)}'
 
         if self.alternative:
-            out += f' else {str(self.alternative)}'
+            out += f' arimana {str(self.alternative)}'
 
         return out
 

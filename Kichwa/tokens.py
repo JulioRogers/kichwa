@@ -69,7 +69,7 @@ def lookup_token_type(literal: str) -> TokenType:
         'kikin': TokenType.TRUE,
         'ari': TokenType.IF,
         'shinapi': TokenType.THEN,
-        'else': TokenType.ELSE,
+        'arimana': TokenType.ELSE,
         'bool': TokenType.CLASSNAME,
         'int': TokenType.CLASSNAME,
         'shimi': TokenType.CLASSNAME,
