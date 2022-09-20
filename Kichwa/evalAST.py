@@ -53,7 +53,7 @@ _INCOMPATIBLE_NULL_OPTERATION = 'Incompatible chusak operation: It is not possib
 
 TYPE_REGISTER_LITERAL: Dict[str, ObjectType] = {
     'int': ObjectType.INTEGER,
-    'shimi': ObjectType.STRING,
+    'str': ObjectType.STRING,
     'bool': ObjectType.BOOLEAN,
     'float': ObjectType.FLOAT,
     'list': ObjectType.LIST,
@@ -63,7 +63,7 @@ TYPE_REGISTER_LITERAL: Dict[str, ObjectType] = {
 }
 TYPE_REGISTER_OBJECT:  Dict[ObjectType, str] = {
     ObjectType.INTEGER: 'int',
-    ObjectType.STRING: 'shimi',
+    ObjectType.STRING: 'str',
     ObjectType.BOOLEAN: 'bool',
     ObjectType.FLOAT: 'float',
     ObjectType.LIST: 'list',

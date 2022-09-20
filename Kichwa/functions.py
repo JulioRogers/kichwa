@@ -162,9 +162,9 @@ def parse(*args: Object) -> Object:
 
 
 BUILTIN: Dict[str, Builtin] = {
-    'length': Builtin(fn=length, io_type="builtin fn (list|tuple|shimi) -> int"),
+    'length': Builtin(fn=length, io_type="builtin fn (list|tuple|str) -> int"),
     'killkana': Builtin(fn=println, io_type="builtin fn (any) -> chusak"),
     'not': Builtin(fn=negation_bolean, io_type="builtin fn (bool) -> bool"),
     'pow': Builtin(fn=pow_impure, io_type="builtin fn (int|float, int|float) -> chusak"),
-    'parse': Builtin(fn=parse, io_type="builtin fn (int|shimi,shimi) -> chusak"),
+    'parse': Builtin(fn=parse, io_type="builtin fn (int|str,str) -> chusak"),
 }

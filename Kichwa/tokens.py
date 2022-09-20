@@ -72,7 +72,7 @@ def lookup_token_type(literal: str) -> TokenType:
         'arimana': TokenType.ELSE,
         'bool': TokenType.CLASSNAME,
         'int': TokenType.CLASSNAME,
-        'shimi': TokenType.CLASSNAME,
+        'str': TokenType.CLASSNAME,
         'float': TokenType.CLASSNAME,
         'fshukcion': TokenType.CLASSNAME,
         'list': TokenType.CLASSNAME,
