@@ -1,0 +1,8 @@
+let is_prime_number = fn x::int, i::int -> bool {
+    if x <= 1 then {=> false;}
+    if x == i then {=> true;}
+    if (x % i) == 0 then {=> false;}
+    => is_prime_number(x, i+1);
+}
+
+printLn(is_prime_number(11, 2)) -- Output: true
