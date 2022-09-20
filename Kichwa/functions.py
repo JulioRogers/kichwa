@@ -81,7 +81,7 @@ def println(*args: Object) -> Object:
             print(argument.inspect())
 
         else:
-            return Error(_UNSUPPORTED_ARGUMENT_TYPE.format('printLn', args[0].type().name))
+            return Error(_UNSUPPORTED_ARGUMENT_TYPE.format('killkana', args[0].type().name))
 
         return Null()
 
@@ -163,7 +163,7 @@ def parse(*args: Object) -> Object:
 
 BUILTIN: Dict[str, Builtin] = {
     'length': Builtin(fn=length, io_type="builtin fn (list|tuple|shimi) -> int"),
-    'printLn': Builtin(fn=println, io_type="builtin fn (any) -> chusak"),
+    'killkana': Builtin(fn=println, io_type="builtin fn (any) -> chusak"),
     'not': Builtin(fn=negation_bolean, io_type="builtin fn (bool) -> bool"),
     'pow': Builtin(fn=pow_impure, io_type="builtin fn (int|float, int|float) -> chusak"),
     'parse': Builtin(fn=parse, io_type="builtin fn (int|shimi,shimi) -> chusak"),
